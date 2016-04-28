@@ -63,3 +63,4 @@ target/
 
 venv/
 keys.py
+*.swp
