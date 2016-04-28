@@ -12,7 +12,6 @@ def news_list(search_query, outfile='urls.txt', count=10):
                 'apikey':keys.alchemykey,
               }
     r = requests.get(endpoint,params=payload)
-    print r.url
     json_vals = r.json()
     for each_story in json_vals['result']['docs']:
         source = each_story['source']['enriched']['url']
